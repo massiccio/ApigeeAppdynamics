@@ -44,7 +44,7 @@ application {
 }
 
 run {
-        systemProperties['jmx.url'] = 'service:jmx:rmi:///jndi/rmi://127.0.0.1:12345/jmxrmi'
+        systemProperties['jmx.url'] = 'service:jmx:rmi:///jndi/rmi://127.0.0.1:1101/jmxrmi'
 }
 
 test {
@@ -83,7 +83,7 @@ task(runFakeService, dependsOn: 'classes', type: JavaExec) {
    jvmArgs '-Dcom.sun.management.jmxremote'
    jvmArgs '-Dcom.sun.management.jmxremote.authenticate=false'
    jvmArgs '-Dcom.sun.management.jmxremote.ssl=false'
-   jvmArgs '-Dcom.sun.management.jmxremote.port=12345'
-   jvmArgs '-Dcom.sun.management.jmxremote.rmi.port=12345'
+   jvmArgs '-Dcom.sun.management.jmxremote.port=1101'
+   jvmArgs '-Dcom.sun.management.jmxremote.rmi.port=1101'
    jvmArgs '-Djava.rmi.server.hostname=localhost'
 }
