@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/massiccio/ApigeeAppdynamics.png?branch=master)](https://travis-ci.org/massiccio/ApigeeAppdynamics)
+
 # ApigeeAppdynamics
 AppDynamics [extension](https://docs.appdynamics.com/display/PRO45/Build+a+Monitoring+Extension+Using+Scripts) to collect [Apigee Message Processor ](https://docs.apigee.com/private-cloud/v4.18.01/how-monitor) metrics.
 Apart from the code providing the business logic, this project includes the AppDynamics files needed to build the extension
