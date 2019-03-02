@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Configuration file for AppDynamics extension Apigee JMX Message Processor -->
+<monitor>
+        <name>Apigee Message Processor Monitor</name>
+        <type>managed</type>
+        <enabled>true</enabled>
+        <description>Monitors the Apigee Message Processor via JMX</description>
+        <monitor-configuration></monitor-configuration>
+        <monitor-run-task>
+                <name>ApigeeMessageProcessor</name>
+                <type>executable</type>
+                <execution-style>periodic</execution-style>
+                <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+                <execution-timeout-in-secs>10</execution-timeout-in-secs>
+                <task-arguments></task-arguments>
+                <executable-task>
+                        <type>file</type>
+                        <!--  Use only one file element per os-type. -->
+                        <file os-type="linux">apigee-message-processor.sh</file>
+           </executable-task>
+        </monitor-run-task>
+</monitor>
